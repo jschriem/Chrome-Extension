@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 2,
+
+    "name": "Google Search Background",
+    "version": "1.0",
+    "author": "John Schriemer",
+    "description": "Background Generator for Google",
+
+    "content_scripts": [{
+      "matches": ["https://www.google.com/*"],
+      "css": ["stylesheet.css"]
+    }],
+
+    "background": {
+      "scripts": [ "background.js" ],
+      "persistent": true
+    },
+
+    "icons": {
+      "16": "iconG.ico"
+    },
+
+    "browser_action": {
+      "default_icon": "iconG.ico"
+    }
+}
